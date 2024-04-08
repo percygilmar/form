@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta o iniciar sesión</title>
+    <link rel="stylesheet" href="sti.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Agregar imagen aquí -->
+        <img src="f.png" alt="Descripción de la imagen" class="header-image">
+        <!-- Fin de la imagen -->
+        <h2>CREA TU CUENTA</h2>
+        <h3>Una suscripcion para Scripd, Everand y SlideShare</h3>
+        <div class="login-options">
+            <a href="https://accounts.google.com/" class="login-option">
+                <!-- Contenedor para el ícono -->
+                <div class="login-option-img">
+                    <img src="go.png" alt="Google Icon" class="icon">
+                </div>
+                Ingresar con Google
+            </a>
+            <a href="https://appleid.apple.com/" class="login-option">
+                <!-- Contenedor para el ícono -->
+                <div class="login-option-img">
+                    <img src="ap.png" alt="Apple Icon" class="icon">
+                </div>
+                Ingresar con Apple
+            </a>
+        </div>
+        <div class="or-divider">
+            <span class="or-text">o</span>
+        </div>
+        <form action="#" method="post" id="loginForm">
+            <!-- Campo de correo electrónico -->
+            <input type="text" id="email" name="email" required placeholder="Correo electrónico">
+            <!-- Campo de contraseña -->
+            <input type="password" id="password" name="password" required placeholder="Contraseña">
+            <!-- Campo de reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="TU_CLAVE_PUBLICA_RECAPTCHA"></div>
+            <!-- Fin de reCAPTCHA -->
+            <input type="submit" value="Iniciar sesión">
+        </form>
+    </div>
+</body>
+</html>
